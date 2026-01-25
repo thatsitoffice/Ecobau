@@ -1,0 +1,542 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+import ScrollAnimations from '../components/ScrollAnimations.astro';
+---
+
+<Layout>
+    <Navigation />
+    <Hero />
+
+    <!-- Section 1: Begrüßung mit Kacheln -->
+    <section class="section" id="begruessung">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">So läuft unser <span class="highlight">Webdesign-Projekt</span><br>für deine Tiny Häuser Website ab</h2>
+                <p class="section-subtitle">4 Wochen – Professionelle Landingpage-Entwicklung mit Conversion-Optimierung</p>
+            </div>
+            <div class="tiles-grid fade-in">
+                <div class="tile">
+                    <h3>Was du heute bekommst</h3>
+                    <ul>
+                        <li>Klarheit über den gesamten Webdesign-Projektablauf</li>
+                        <li>Definition der Ziele für deine Tiny Häuser Landingpage</li>
+                        <li>Strukturierte Planung aller Entwicklungsschritte</li>
+                        <li>Transparenz über Verantwortlichkeiten & Deadlines</li>
+                    </ul>
+                </div>
+                <div class="tile">
+                    <h3>Was nach dem Call passiert</h3>
+                    <ul>
+                        <li>Detailliertes Webdesign-Projektkonzept für deine Website</li>
+                        <li>Klare Übersicht über alle nächsten Entwicklungsschritte</li>
+                        <li>Start der Konzeptionsphase (Woche 1)</li>
+                        <li>Kick-off Meeting für die Website-Entwicklung</li>
+                    </ul>
+                </div>
+                <div class="tile">
+                    <h3>Deine Vorteile</h3>
+                    <ul>
+                        <li>4-Wochen strukturierter Webdesign-Prozess</li>
+                        <li>Klare Kommunikation auf allen Ebenen</li>
+                        <li>Professionelle Website-Umsetzung nach Best Practices</li>
+                        <li>Langfristige Partnerschaft für Wartung & Weiterentwicklung</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Ziele mit Stats -->
+    <section class="section section-with-bg" id="ziele" style="background-image: url('/photorealistic-wooden-house-with-timber-structure.jpg');">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Ziel & <span class="highlight">Erfolgskriterien</span> definieren</h2>
+                <p class="section-subtitle">Strategie vor Design</p>
+            </div>
+            <div class="framing fade-in">
+                Design ist Mittel zum Zweck – Conversion ist das Ziel.
+            </div>
+            
+            <!-- Tiny House Market Stats -->
+            <div class="stats-grid fade-in">
+                <div class="stat-tile">
+                    <div class="stat-number">48.42M</div>
+                    <div class="stat-label">EUR Marktgröße 2024</div>
+                </div>
+                <div class="stat-tile">
+                    <div class="stat-number">19.9%</div>
+                    <div class="stat-label">Jährliches Wachstum</div>
+                </div>
+                <div class="stat-tile">
+                    <div class="stat-number">80-200K</div>
+                    <div class="stat-label">EUR Durchschnittspreis</div>
+                </div>
+                <div class="stat-tile">
+                    <div class="stat-number">30-50</div>
+                    <div class="stat-label">Jahre Zielgruppe</div>
+                </div>
+            </div>
+
+            <div class="tiles-grid fade-in">
+                <div class="tile">
+                    <h3>Qualifizierte Anfragen</h3>
+                    <p>Die Landingpage soll Interessenten für Tiny Häuser generieren und vorqualifizieren, die bereit sind für eine Beratung und Objektbesichtigung.</p>
+                </div>
+                <div class="tile">
+                    <h3>Vertrauen aufbauen</h3>
+                    <p>Die Landingpage kommuniziert Nachhaltigkeit und Premium-Qualität, um sich vom Wettbewerb abzuheben und Leads zu qualifizieren.</p>
+                </div>
+                <div class="tile">
+                    <h3>Experte werden</h3>
+                    <p>Die Landingpage etabliert Tectum Ecobau als führenden Anbieter für ökologisches, nachhaltiges Bauen in DACH und filtert qualifizierte Leads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Zielgruppe -->
+    <section class="section" id="zielgruppe">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Für wen die Website<br><span class="highlight">arbeitet</span></h2>
+                <p class="section-subtitle">Zielgruppe & Markt</p>
+            </div>
+            <div class="highlight-box fade-in">
+                <strong>Wichtig:</strong> Keine Website für „alle". Klarheit schafft Fokus und bessere Ergebnisse. Der deutsche Tiny House Markt wächst jährlich um 19.9% – die Zielgruppe ist klar definiert.
+            </div>
+            <div class="two-column fade-in">
+                <div class="content-card">
+                    <h3>Idealkunde für Tiny Häuser</h3>
+                    <ul>
+                        <li><strong>Demografie:</strong> 30-50 Jahre, umweltbewusst, minimalistisch orientiert</li>
+                        <li><strong>Motive:</strong> Nachhaltigkeit, Kostenersparnis, Flexibilität, Freiheit</li>
+                        <li><strong>Budget:</strong> 80.000 - 200.000€ für Tiny Haus inkl. Grundstück</li>
+                        <li><strong>Entscheidungsprozess:</strong> Paare/Familien, oft mit Beratung und Besichtigung</li>
+                        <li><strong>Pain Points:</strong> Hohe Immobilienpreise, Wunsch nach nachhaltigem Leben</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3>Markt & Positionierung</h3>
+                    <ul>
+                        <li><strong>Region:</strong> DACH (Deutschland, Österreich, Schweiz)</li>
+                        <li><strong>Marktgröße:</strong> 48.42 Mio. EUR in Deutschland (2024)</li>
+                        <li><strong>Wachstum:</strong> 19.9% CAGR – einer der am schnellsten wachsenden Märkte</li>
+                        <li><strong>Abgrenzung:</strong> Ökologisches Bauen, Premium-Qualität, individuelle Planung</li>
+                        <li><strong>Wettbewerb:</strong> Standard-Anbieter vs. Premium-Öko-Bau (deine Nische)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Angebot -->
+    <section class="section" id="angebot">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Angebot & <span class="highlight">Nutzenversprechen</span></h2>
+                <p class="section-subtitle">USP klarmachen</p>
+            </div>
+            <div class="key-message fade-in">
+                <p>Individuelle Tiny Häuser in ökologischer Premium-Qualität – nachhaltig, energieeffizient und maßgeschneidert für deinen Lebensstil.</p>
+            </div>
+            <div class="tiles-grid tiles-4 fade-in">
+                <div class="tile">
+                    <h3>Ökologische Expertise</h3>
+                    <p>Fokus auf nachhaltige Materialien und Bauweisen. Jedes Tiny Haus ist ein Statement für umweltbewusstes Leben.</p>
+                </div>
+                <div class="tile">
+                    <h3>Individuelle Planung</h3>
+                    <p>Jedes Tiny Haus wird maßgeschneidert auf deine Bedürfnisse – von der Planung bis zum Einzug.</p>
+                </div>
+                <div class="tile">
+                    <h3>Premium-Qualität</h3>
+                    <p>Hochwertige Verarbeitung und Materialien für Langlebigkeit und Wertbeständigkeit.</p>
+                </div>
+                <div class="tile">
+                    <h3>Energieeffizienz</h3>
+                    <p>Optimale Dämmung und moderne Haustechnik für niedrige Betriebskosten.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Seitenstruktur -->
+    <section class="section section-with-bg" id="seitenstruktur" style="background-image: url('/photorealistic-house-with-wooden-architecture-timber-structure.jpg');">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">So wird aus Besuchern<br><span class="highlight">eine qualifizierte Anfrage</span></h2>
+                <p class="section-subtitle">Landingpage-Struktur & Conversion-Funnel zur Lead-Vorqualifizierung</p>
+            </div>
+            <div class="tiles-grid tiles-5 fade-in">
+                <div class="tile">
+                    <h3>Erste Ansprache & Vorqualifizierung</h3>
+                    <p>Tiny Haus-Visual, Hauptargumente, klare Zielgruppenansprache. Sofortige Vorqualifizierung durch gezielte Botschaften.</p>
+                </div>
+                <div class="tile">
+                    <h3>Pain Points adressieren</h3>
+                    <p>Herausforderungen der Zielgruppe aufzeigen (hohe Immobilienpreise, Umweltbewusstsein). Lead-Qualifizierung durch Problembewusstsein.</p>
+                </div>
+                <div class="tile">
+                    <h3>USP & Nutzenversprechen</h3>
+                    <p>Ökologisches Premium-Bauen, individuelle Planung, Energieeffizienz. Klare Differenzierung für qualifizierte Leads.</p>
+                </div>
+                <div class="tile">
+                    <h3>Vertrauen & Glaubwürdigkeit</h3>
+                    <p>Referenzen, Kundenstimmen, Marktdaten (48.42M EUR, 19.9% Wachstum). Qualifizierung durch Vertrauen.</p>
+                </div>
+                <div class="tile">
+                    <h3>Conversion-Punkt</h3>
+                    <p>Beratungstermin vereinbaren, Objektbesichtigung anfragen. Klare CTAs mit Lead-Vorqualifizierung (Budget, Zeitrahmen).</p>
+                </div>
+            </div>
+            <div class="fade-in" style="margin-top: 100px;">
+                <h3 style="font-size: clamp(24px, 4vw, 36px); font-weight: 600; color: var(--white); margin-bottom: 60px; text-align: center; letter-spacing: -0.8px;">Conversion-Funnel & Lead-Vorqualifizierung</h3>
+                
+                <!-- Funnel Flow Visual -->
+                <div class="funnel-flow-container" style="margin: 60px 0 80px 0;">
+                    <div class="funnel-flow-item">
+                        <div class="funnel-step">
+                            <div class="funnel-step-number">1</div>
+                            <h4>Aufmerksamkeit</h4>
+                        </div>
+                        <div class="funnel-arrow">→</div>
+                        <div class="funnel-step">
+                            <div class="funnel-step-number">2</div>
+                            <h4>Interesse</h4>
+                        </div>
+                        <div class="funnel-arrow">→</div>
+                        <div class="funnel-step">
+                            <div class="funnel-step-number">3</div>
+                            <h4>Vertrauen</h4>
+                        </div>
+                        <div class="funnel-arrow">→</div>
+                        <div class="funnel-step">
+                            <div class="funnel-step-number">4</div>
+                            <h4>Vorqualifizierung</h4>
+                        </div>
+                        <div class="funnel-arrow">→</div>
+                        <div class="funnel-step">
+                            <div class="funnel-step-number">5</div>
+                            <h4>Anfrage</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Cards -->
+                <div class="cta-cards-container" style="margin-top: 80px;">
+                    <div class="cta-card primary">
+                        <div class="cta-card-header">
+                            <span class="cta-badge">Primär</span>
+                            <h3>Beratungstermin vereinbaren</h3>
+                        </div>
+                        <p>Kurzes Qualifizierungsformular mit Fragen zu Budget, Zeitrahmen und Motivation für qualifizierte Leads</p>
+                    </div>
+                    <div class="cta-card secondary">
+                        <div class="cta-card-header">
+                            <span class="cta-badge secondary">Sekundär</span>
+                            <h3>Mehr Informationen</h3>
+                        </div>
+                        <p>Für Interessenten in früherer Phase des Entscheidungsprozesses</p>
+                    </div>
+                </div>
+
+                <!-- Lead Qualification Box -->
+                <div class="lead-qualification-box" style="margin-top: 60px;">
+                    <div class="lead-qualification-icon">✓</div>
+                    <h3>Lead-Vorqualifizierung</h3>
+                    <p>Kurze Fragen zu Budget, Zeitrahmen und Motivation filtern qualifizierte Leads und erhöhen die Conversion-Rate</p>
+                </div>
+
+                <!-- Key Message -->
+                <div class="conversion-message" style="margin-top: 60px;">
+                    <strong>Keine Ablenkung</strong> – klare Fokussierung auf Conversion und Qualifizierung
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Design -->
+    <section class="section" id="design">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Landingpage-Design-Richtung & <span class="highlight">Stilrahmen</span></h2>
+                <p class="section-subtitle">Design-Konzept für deine Conversion-optimierte Tiny Häuser Landingpage</p>
+            </div>
+            <div class="framing fade-in">
+                Design folgt Strategie – nicht umgekehrt.
+            </div>
+            <div class="tiles-grid tiles-4 fade-in">
+                <div class="tile">
+                    <h3>Vertrauensvoll</h3>
+                    <p>Hochwertige Präsentation wie bei Immobilienportalen. Professionell und seriös.</p>
+                </div>
+                <div class="tile">
+                    <h3>Ökologisch</h3>
+                    <p>Schwarz, Beige, Weiß – warme Erdtöne. Minimalistisch und nachhaltig.</p>
+                </div>
+                <div class="tile">
+                    <h3>Clean Design</h3>
+                    <p>Viel Weißraum, fokussierte Objektpräsentation. Keine Ablenkung.</p>
+                </div>
+                <div class="tile">
+                    <h3>Inspirierend</h3>
+                    <p>Große, hochwertige Bilder, Galerien, 360°-Touren. Lifestyle-Atmosphäre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Inhalte -->
+    <section class="section" id="inhalte">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Was wir brauchen<br><span class="highlight">– und bis wann</span></h2>
+                <p class="section-subtitle">Inhalte & Zuarbeit des Kunden</p>
+            </div>
+            <div class="two-column fade-in">
+                <div class="content-card">
+                    <h3>Welche Inhalte wir liefern</h3>
+                    <ul>
+                        <li>Strukturierte Texte basierend auf unserem Gespräch</li>
+                        <li>SEO-optimierte Formulierungen</li>
+                        <li>Call-to-Action-Texte</li>
+                        <li>Konzeptionelle Vorschläge für alle Seiten</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3>Welche Infos von Tectum Ecobau kommen müssen</h3>
+                    <ul>
+                        <li><strong>Objekt-Daten:</strong> Tiny Haus-Spezifikationen, Grundrisse, Preise, Verfügbarkeit</li>
+                        <li><strong>Bilder:</strong> Professionelle Fotos der Tiny Häuser (Außen, Innen, Details), Lifestyle-Bilder für Landingpage-Abschnitte</li>
+                        <li><strong>Texte:</strong> Objektbeschreibungen, Nachhaltigkeits-Infos, Prozess-Beschreibungen</li>
+                        <li><strong>Logos & CI:</strong> Brand-Assets, Farben, Schriftarten</li>
+                        <li><strong>Referenzen:</strong> Fertiggestellte Projekte, Kundenstimmen, Zertifikate</li>
+                        <li><strong>Rechtliches:</strong> Impressum, Datenschutz, AGB, Widerrufsrecht</li>
+                        <li><strong>Technische Daten:</strong> Dämmwerte, Energieeffizienz, Materialien, Haustechnik</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Technik -->
+    <section class="section" id="technik">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Technische Landingpage-Umsetzung</h2>
+                <p class="section-subtitle">Technologie-Stack für deine Conversion-optimierte Tiny Häuser Landingpage</p>
+            </div>
+            <div class="tiles-grid fade-in">
+                <div class="tile">
+                    <h3>Mobile-First</h3>
+                    <p>Optimiert für alle Geräte. Responsive Design für beste User Experience.</p>
+                </div>
+                <div class="tile">
+                    <h3>Suchmaschinenoptimierung</h3>
+                    <p>On-Page-Optimierung, Meta-Tags, strukturierte Daten für bessere Rankings.</p>
+                </div>
+                <div class="tile">
+                    <h3>Datenschutz</h3>
+                    <p>Datenschutzerklärung, Cookie-Hinweise, SSL. Vollständig DSGVO-konform.</p>
+                </div>
+            </div>
+            <div class="framing fade-in">
+                Nicht technisch abtauchen – Verständnis statt Details. Du musst nicht alles verstehen, nur wissen, dass es professionell umgesetzt wird.
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Workflow Timeline -->
+    <section class="section" id="workflow">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Webdesign-Projektablauf & <span class="highlight">Meilensteine</span></h2>
+                <p class="section-subtitle">4 Wochen Landingpage-Entwicklung – 4 Phasen – Strukturiert & Transparent</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Phase 1: Konzeption (Woche 1)</h3>
+                        <ul>
+                            <li>Strategie & Zieldefinition für Tiny Häuser Landingpage</li>
+                            <li>Landingpage-Struktur & Conversion-Funnel (Hero → Problem → Lösung → Social Proof → CTA)</li>
+                            <li>Content-Konzept für Conversion-Optimierung (USP, Nutzenversprechen, Vorqualifizierung)</li>
+                            <li>Design-Richtung (Premium Immobilien-Stil, Conversion-fokussiert)</li>
+                            <li>Lead-Vorqualifizierungs-Formular & Funnel-Logik</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Phase 2: Design (Woche 2)</h3>
+                        <ul>
+                            <li>Wireframes für Landingpage-Abschnitte (Hero, Problem, Lösung, Social Proof, CTA)</li>
+                            <li>Design-Mockups für Conversion-optimierte Landingpage</li>
+                            <li>Bild-Galerie-Layout & Visual-Hierarchie</li>
+                            <li>CTA-Design & Lead-Vorqualifizierungs-Formular</li>
+                            <li>Design-Review & Feedback</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Phase 3: Umsetzung (Woche 3)</h3>
+                        <ul>
+                            <li>Technische Implementierung der Landingpage</li>
+                            <li>Landingpage-Abschnitte mit Conversion-Optimierung</li>
+                            <li>Bild-Galerien & Visual-Elemente für Vertrauen</li>
+                            <li>Content-Integration (USP, Nutzenversprechen, Social Proof)</li>
+                            <li>Lead-Vorqualifizierungs-Formular & Conversion-Tracking</li>
+                            <li>Responsive Anpassungen (Mobile-First für maximale Conversion)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>Phase 4: Korrekturschleife & Livegang (Woche 4)</h3>
+                        <ul>
+                            <li>Feedback einarbeiten</li>
+                            <li>Feinabstimmungen bei Conversion-Elementen</li>
+                            <li>Performance-Optimierung (Bilder, Ladezeiten)</li>
+                            <li>Finale Tests (alle Geräte, Browser)</li>
+                            <li>SEO-Check & Optimierung</li>
+                            <li>Go-Live</li>
+                            <li>Übergabe</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: Feedback -->
+    <section class="section" id="feedback">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Feedback- & <span class="highlight">Korrekturprozess</span></h2>
+                <p class="section-subtitle">Chaos vermeiden</p>
+            </div>
+            <div class="framing fade-in">
+                Strukturiertes Feedback spart Zeit, Geld und Nerven.
+            </div>
+            <div class="tiles-grid fade-in">
+                <div class="tile">
+                    <h3>Feedback geben</h3>
+                    <ul>
+                        <li><strong>Zentralisiert:</strong> Alle Anmerkungen an einem Ort</li>
+                        <li><strong>Konkret:</strong> Nicht "gefällt mir nicht", sondern spezifisch</li>
+                        <li><strong>Priorisiert:</strong> Was ist wichtig, was ist nice-to-have?</li>
+                        <li><strong>Fristgerecht:</strong> Innerhalb der vereinbarten Frist</li>
+                    </ul>
+                </div>
+                <div class="tile">
+                    <h3>Korrekturschleifen</h3>
+                    <ul>
+                        <li>2–3 strukturierte Feedback-Runden</li>
+                        <li>Jede Runde wird vollständig abgearbeitet</li>
+                        <li>Klare Deadline für jede Feedback-Runde</li>
+                        <li>Keine endlosen Änderungsschleifen</li>
+                    </ul>
+                </div>
+                <div class="tile">
+                    <h3>Entscheidet</h3>
+                    <ul>
+                        <li>Eine Ansprechperson für finales Feedback</li>
+                        <li>Keine "Komitee-Entscheidungen"</li>
+                        <li>Interne Abstimmungen vor Feedback</li>
+                        <li>Klare Verantwortung</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 11: Launch -->
+    <section class="section" id="launch">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Launch, Übergabe & <span class="highlight">nächste Schritte</span></h2>
+                <p class="section-subtitle">Langfristigkeit & Upsell-Basis</p>
+            </div>
+            <div class="tiles-grid fade-in">
+                <div class="tile">
+                    <h3>Go-Live</h3>
+                    <ul>
+                        <li>Finale Tests auf allen Geräten</li>
+                        <li>Go-Live mit minimaler Downtime</li>
+                        <li>Monitoring der ersten Tage</li>
+                    </ul>
+                </div>
+                <div class="tile">
+                    <h3>Backup & Updates</h3>
+                    <ul>
+                        <li>Regelmäßige automatische Backups</li>
+                        <li>Sicherheits-Updates</li>
+                        <li>SSL-Zertifikat & Datenschutz</li>
+                    </ul>
+                </div>
+                <div class="tile">
+                    <h3>Weiterentwicklung</h3>
+                    <ul>
+                        <li>Optionale Wartungsverträge</li>
+                        <li>SEO-Optimierung & Content-Marketing</li>
+                        <li>Weiterentwicklung basierend auf Daten</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="key-message fade-in">
+                <p>Die Website ist die Basis – nicht das Ende.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 12: Zusammenfassung -->
+    <section class="section section-with-bg" id="zusammenfassung" style="background-image: url('/photorealistic-house-with-wooden-architecture-timber-structure.jpg');">
+        <div class="section-content">
+            <div class="section-header fade-in">
+                <h2 class="section-title">So geht es <span class="highlight">jetzt weiter</span></h2>
+                <p class="section-subtitle">Zusammenfassung & nächste To-dos</p>
+            </div>
+            <div class="tiles-grid fade-in">
+                <div class="tile">
+                    <h3>Beschlossen</h3>
+                    <ul>
+                        <li>Ziele und Erfolgskriterien definiert</li>
+                        <li>Zielgruppe geklärt</li>
+                        <li>Angebot festgelegt</li>
+                        <li>Landingpage-Struktur & Conversion-Funnel geplant</li>
+                        <li>Design-Richtung abgestimmt</li>
+                        <li>4-Wochen-Workflow vereinbart</li>
+                    </ul>
+                </div>
+                <div class="tile">
+                    <h3>Schritte</h3>
+                    <ul>
+                        <li>Projektkonzept wird erstellt</li>
+                        <li>Zuarbeiten-Checkliste wird vorbereitet</li>
+                        <li>Kick-off für Phase 1</li>
+                    </ul>
+                </div>
+                <div class="tile">
+                    <h3>Zeitplan</h3>
+                    <ul>
+                        <li><strong>Woche 1:</strong> Objekt-Daten & Content liefern</li>
+                        <li><strong>Woche 2:</strong> Feedback zu Design-Mockups</li>
+                        <li><strong>Woche 3:</strong> Objekt-Fotos bereitstellen</li>
+                        <li><strong>Woche 4:</strong> Finales Feedback & Go-Live</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+    <ScrollAnimations />
+</Layout>

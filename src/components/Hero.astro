@@ -1,0 +1,40 @@
+---
+---
+
+<section class="hero" id="hero">
+    <img 
+        src="/photorealistic-house-with-wooden-architecture-timber-structure.jpg" 
+        alt="Tiny Haus - Webdesign Projekt Tectum Ecobau" 
+        class="hero-image" 
+        loading="eager"
+    />
+    <div class="hero-content">
+        <h1>
+            Wir sind<br>
+            <span class="highlight">Bewegung</span>
+        </h1>
+        <h1 style="margin-top: -12px;">
+            Wir sind<br>
+            <span class="highlight">Unterscheidung</span>
+        </h1>
+        <p class="hero-subtitle">
+            Deine Freiheit, nachhaltig zu leben. Jedes Tiny Haus ist darauf ausgelegt, deinen Komfort, deine Zeit und deine Ambitionen zu erfüllen – damit du dich auf das konzentrieren kannst, was wirklich zählt.
+        </p>
+        <div class="hero-cta">
+            <a href="#ziele" class="btn btn-primary">Starte die Reise</a>
+            <a href="#zusammenfassung" class="btn">Zusammenfassung</a>
+        </div>
+    </div>
+    <div class="scroll-indicator">Scroll nach unten</div>
+</section>
+
+<script>
+    // Parallax effect for hero image
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const heroImage = document.querySelector('.hero-image');
+        if (heroImage && scrolled < window.innerHeight) {
+            heroImage.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+    });
+</script>

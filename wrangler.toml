@@ -1,0 +1,9 @@
+# Cloudflare Pages/Workers Konfiguration
+# Diese Datei ist optional für Cloudflare Pages
+# Cloudflare Pages erkennt Astro-Projekte automatisch
+
+name = "tectum-ecobau"
+compatibility_date = "2024-01-01"
+
+# Für Cloudflare Pages ist keine weitere Konfiguration nötig
+# Die Build-Ausgabe wird automatisch erkannt

@@ -1,0 +1,40 @@
+---
+---
+
+<nav id="navbar">
+    <div class="logo">Tectum Ecobau</div>
+    <ul class="nav-links">
+        <li><a href="#hero">Start</a></li>
+        <li><a href="#ziele">Ziele</a></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#zusammenfassung">Zusammenfassung</a></li>
+    </ul>
+</nav>
+
+<script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+</script>
