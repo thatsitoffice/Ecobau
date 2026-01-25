@@ -50,7 +50,7 @@ npm run preview
    - Klicke auf "Create a project"
    - Verbinde dein GitHub Repository
    - Cloudflare erkennt automatisch Astro und konfiguriert:
-     - **Build command:** `npm run build`
+     - **Build command:** `npm run build`**
      - **Build output directory:** `dist`
      - **Framework preset:** Astro
 
