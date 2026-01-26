@@ -43,7 +43,6 @@
                     block: 'start'
                 });
                 // Close mobile menu if open
-                const navbar = document.getElementById('navbar');
                 if (navbar) {
                     navbar.classList.remove('menu-open');
                 }
@@ -53,7 +52,6 @@
 
     // Mobile menu toggle
     const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const navbar = document.getElementById('navbar');
     if (menuToggle && navbar) {
         menuToggle.addEventListener('click', () => {
             navbar.classList.toggle('menu-open');
