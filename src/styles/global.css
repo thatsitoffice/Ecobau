@@ -65,6 +65,12 @@ nav.scrolled .nav-links a::after {
     background: var(--white);
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
 .logo {
     font-size: 16px;
     font-weight: 600;
@@ -97,6 +103,40 @@ nav.scrolled .logo-image {
 }
 
 nav.scrolled .logo-image-white {
+    display: block;
+}
+
+.cooperation-logos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.x-logo,
+.henneberg-logo {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    transition: opacity 0.3s;
+}
+
+.x-logo-white,
+.henneberg-logo-white {
+    display: none;
+}
+
+.x-logo-dark,
+.henneberg-logo-dark {
+    display: block;
+}
+
+nav.scrolled .x-logo-dark,
+nav.scrolled .henneberg-logo-dark {
+    display: none;
+}
+
+nav.scrolled .x-logo-white,
+nav.scrolled .henneberg-logo-white {
     display: block;
 }
 
@@ -1358,6 +1398,10 @@ footer p {
     nav.scrolled {
         padding: 16px 32px;
         background: var(--primary-black);
+    }
+
+    .cooperation-logos {
+        display: none;
     }
 
     .mobile-menu-toggle {
